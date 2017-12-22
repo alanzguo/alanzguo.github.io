@@ -1,0 +1,9 @@
+@font-face {
+    font-family:"Museo Sans";
+    src:url(MuseoSans_500.otf) format("opentype");
+}
+
+h2 {
+    font-family: "Museo Sans";
+    font-size: 300;
+}
