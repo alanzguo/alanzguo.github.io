@@ -2,8 +2,45 @@
     font-family:"Museo Sans";
     src:url(MuseoSans_500.otf) format("opentype");
 }
+@font-face {
+    font-family:"Caudex";
+    src:url("Caudex-Bold.ttf") format("truetype");
+}
+
+body {
+    margin:0px;
+}
+
+h1 {
+    font-family: "Caudex";
+    font-size:64px;
+    text-align: "center";
+}
 
 h2 {
     font-family: "Museo Sans";
     font-size: 300px;
+}
+
+#name-header {
+    height: 500px;
+    background: #2E2E2E;
+    font-family: "Caudex";
+    font-size: 64px;
+    text-align: center; 
+    color:#EFEFEF;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#subheader-container {
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+
+.subheader-item {
+    font-family: "Museo Sans";
+    font-size: 24px;
 }
