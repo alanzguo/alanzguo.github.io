@@ -41,11 +41,33 @@ h2 {
     font-size: 24px;
 
 }
+/*
+.modal-pcontent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
 
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+*/
 /* ID attributes */
 
 #name-header {
-    height:800px;
+    height:850px;
     background: #2E2E2E;
     font-family: "Aqua";
     font-size: 64px;
@@ -54,6 +76,22 @@ h2 {
     display:flex;
     justify-content:center;
     align-items: center;
+}
+
+#projects-modal {
+    display:none;
+    z-index: 1;
+    position: fixed;
+    padding-top:100px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto;
+}
+
+#projects-button{
+
 }
 
 #subheader-container {
@@ -80,4 +118,23 @@ h2 {
 .fadeDown {
     animation-name:fadeDown;
     animation-duration:1s;
+}
+
+@keyframes shrinkName {
+    from {
+        font-size: 64px;
+        color:#EFEFEF;
+        justify-content:center;
+        align-items: center;
+    }
+    to {
+        font-size: 24px;
+        align-items: top;
+
+    }
+}
+
+.shrinkName {
+    animation-name:shrinkName;
+    animation-duration:1.5s;
 }
